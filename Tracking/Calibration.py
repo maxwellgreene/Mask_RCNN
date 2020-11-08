@@ -1,5 +1,5 @@
 # TO DO:
-# Make functiosn callable with arguments
+# Make functions callable with arguments
 
 import cv2, sys
 import numpy as np
@@ -267,7 +267,7 @@ def DewarpMovie(readpath,writepath,datapath):
                 #temp = cv2.resize(dst[ROI[1]:(ROI[3]+ROI[1]), ROI[0]:(ROI[0]+ROI[2])], image_size, fx=sc,fy=sc,interpolation=cv2.INTER_NEAREST)
                 #temp = cv2.resize(dst[int(mapy[ROI[1],ROI[0]]):int((mapy[ROI[3],ROI[1]])), int(mapx[ROI[0],[1]]):int((mapx[ROI[0],ROI[1]]))], image_size, fx=sc,fy=sc,interpolation=cv2.INTER_NEAREST)
                 out.write(dst)
-                pb.print_progress_bar(i)
+                #pb.print_progress_bar(i)
 
         out.release()
         video.release()
